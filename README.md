@@ -1,6 +1,6 @@
 The Square-Sum Problem Solver
 ========
-These scripts try to solve The Square-Sum Problem for all runs from 1 to *.  
+These scripts try to solve The Square-Sum Problem for all runs 1-*.  
 This problem was introduced by Matt Parker in the Numberphile videos:  
 [The Square-Sum Problem - Numberphile](https://youtu.be/G1m7goLCJDY)  
 [The Square-Sum Problem (extra footage) - Numberphile](https://youtu.be/7_ph5djCCnM)
@@ -18,7 +18,7 @@ To achieve that it tracks all possible paths in a graph for a given run.
 The following runs are always based on the results of the previous ones.
 
 **Results:**  
-Due to the explosion of all possible paths in a graph around the run 1-27 it is very hard to obtain any further answers for longer runs.
+Due to the explosion of all possible paths in a graph around the run 1-27, it is very hard to obtain any further answers for longer runs.
 
 ### The Square-Sum Problem Solver (Backtracking Version)
 This version uses backtracking to find an answer for a tested run.  

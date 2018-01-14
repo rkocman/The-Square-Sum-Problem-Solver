@@ -4,7 +4,7 @@
  * The Square-Sum Problem Solver (Backtracking Version)
  * Author: Radim Kocman
  * 
- * This script tries to solve The Square-Sum Problem for all runs from 1 to *.
+ * This script tries to solve The Square-Sum Problem for all runs 1-*.
  * This problem was introduced by Matt Parker in the Numberphile videos:
  * The Square-Sum Problem [https://youtu.be/G1m7goLCJDY]
  * The Square-Sum Problem (extra footage) [https://youtu.be/7_ph5djCCnM]
