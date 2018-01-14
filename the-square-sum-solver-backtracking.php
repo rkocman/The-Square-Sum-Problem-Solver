@@ -242,7 +242,6 @@ class BacktrackingPathStrategy {
         return $result;
       }
       $result = self::nextPossiblePath($vertices, $path);
-      echo $result."\n";
     }
     return null;
   }
