@@ -145,11 +145,15 @@ class SquareSumSolver {
     echo "--------------------------------------------\n";
   }
   
+  public function setStart($vertexId) {
+    $this->i = $vertexId-1;
+  }
+  
   public function solveNext() {
     $this->i++;
-    echo "Case 1-".$this->i.":\n";
     $vertex = new Vertex($this->i);
     ExpandSquareSumVertices::addVertex($this->vertices, $vertex);
+    echo "Case ".reset($this->vertices)->getId()."-".$this->i.":\n";
     $solution = $this->findSolution($vertex);
     if ($solution === null) {
       echo "FAIL\n";
@@ -186,8 +190,9 @@ class ExpandSquareSumVertices {
   }
   
   private static function createConnections(array &$vertices, Vertex $vertex) {
+    $startId = reset($vertices)->getId();
     $id = $vertex->getId();
-    for ($i = 1; $i < $id; $i++) {
+    for ($i = $startId; $i < $id; $i++) {
       $sqrtSum = sqrt($i+$id);
       if ($sqrtSum == floor($sqrtSum)) {        
         $to = $vertices[$i];
@@ -248,7 +253,7 @@ class BacktrackingPathStrategy {
   
   private static function nextPossiblePath(array &$vertices, Path $path) {
     if (count($path->getPathVertices()) === 0) {
-      $path->appendEnd($vertices[1]);
+      $path->appendEnd(reset($vertices));
       return $path;
     }
     if (count($path->getPathVertices()) < count($vertices)) {
@@ -328,6 +333,7 @@ class BacktrackingPathStrategy {
 }
 
 $solver = new SquareSumSolver();
+$solver->setStart(1);
 while (1) {
   $solver->solveNext();
 }
