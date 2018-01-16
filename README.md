@@ -34,6 +34,7 @@ But unless some heuristic hits, the follow-up results are very slow.
 
 ## Notes
 With the use of mathematical libraries, and thus more efficient techniques for finding Hamiltonian paths, it is possible to solve runs up to at least 1-299.
+(Or even far beyond -- see the [Wolfram solution](http://community.wolfram.com/groups/-/m/t/1264240) with runs around 1-2700.)
 In this sense, the presented solvers are kind of Parker Square solutions.
 
 
