@@ -37,6 +37,10 @@ With the use of mathematical libraries, and thus more efficient techniques for f
 (Or even far beyond&mdash;see the [Wolfram solution](http://community.wolfram.com/groups/-/m/t/1264240) with runs around 1&ndash;2700.)  
 In this sense, the presented solvers are kind of Parker Square solutions.
 
+## Update
+This problem is now completely solved:  
+[Numberphile's Square-Sum Problem was solved! #SoME2](https://youtu.be/-vxW42R47bc)
+
 
 ## License
 MIT License
